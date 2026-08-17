@@ -13,7 +13,6 @@ CREATE TABLE IF NOT EXISTS students (
 Docker Compose file:
 ---------------------
 
-version: '3.8'
 services:
  frontend:
   build:
