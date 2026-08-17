@@ -56,9 +56,15 @@ services:
    - "6379:6379"
   volumes:
    - ./redis_data:/data
+
+backend/.env
+------------
 DB_HOST=mysql
 DB_USER=admin
 DB_PASSWORD=admin123
 DB_NAME=schooldb
 REDIS_URL=redis://redis:6379
-VITE_API_URL=http://<server-ip>/api
+
+frontend/.env
+-------------
+VITE_API_URL=http://<public-ip>/api
